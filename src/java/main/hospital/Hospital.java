@@ -177,7 +177,7 @@ public class Hospital {
         return doctors.get(Randomizer.getRandomInt(0,doctors.size()-1));
     }
 
-
-
-
+    public ConcurrentSkipListMap<String, CopyOnWriteArrayList<Room>> getDepartments() {
+        return departments;
+    }
 }
